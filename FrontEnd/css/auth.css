@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #6e00ff, #9c1aff);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #9c1aff, #6e00ff);
+    transform: translateY(-2px);
+}
+
+.info {
+    color: #bbbbbb;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.password-match {
+    color: #ff4c4c;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.back-to-main {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #6e00ff;
+    transition: color 0.3s ease;
+}
+
+.back-to-main:hover {
+    color: #9c1aff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

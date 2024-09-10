@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de Administrare</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Pagina de Administrare - Adauga/Modifica Fisiere</h2>
+    <form id="fileForm">
+      <label for="fileTitle">Titlul Fisierului:</label>
+      <input type="text" id="fileTitle" name="fileTitle" required>
+
+      <label for="file">Alege Fisierul:</label>
+      <input type="file" id="file" name="file" required>
+
+      <input type="submit" value="Adauga Fisier">
+    </form>
+
+    <h2>Lista de Fisiere</h2>
+    <ul class="file-list" id="fileList">
+    </ul>
+
+    <div class="context-menu" id="contextMenu">
+      <ul>
+        <li id="view">Vizualizare</li>
+        <li id="edit">Editare</li>
+        <li id="delete">Stergere</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="scripts/admin_panel.js"></script>
+
+</body>
+
+</html>

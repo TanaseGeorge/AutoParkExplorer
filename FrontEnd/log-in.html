@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <form id="loginForm">
+      <input type="text" id="username" name="username" placeholder="e-mail" required minlength="3"
+        onblur="validateInput(this)">
+      <div class="info">(Minim 3 caractere)</div><br>
+      <input type="password" id="password" name="password" placeholder="Parola" required minlength="5"
+        onblur="validateInput(this)">
+      <div class="info">(Minim 5 caractere)</div><br>
+      <input type="submit" value="Autentificare" id="submitButton" disabled>
+    </form>
+    <div id="capslockWarning" class="info" style="color: red; display: none;">ATENTIE: CAPSLOCK ACTIVAT</div>
+    <div class="info" style="text-align: center; margin-top: 10px;">Nu ai un cont? Apasa <a href="sign-up.html">aici</a>
+      pentru a te inregistra</div>
+    <div class="back-to-main" onclick="goToMainPage()">Inapoi la pagina principala</div>
+  </div>
+  <script src="scripts/auth2.js"></script>
+  <script src="scripts/services.js"></script>
+</body>
+
+</html>

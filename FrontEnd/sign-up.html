@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="signInForm">
+      <input type="text" id="username" name="username" placeholder="Nume de utilizator" required minlength="3"
+        onblur="validateInput(this)">
+      <div class="info">(Minim 3 caractere)</div><br>
+      <input type="date" id="dob" name="dob" placeholder="Data nasterii" required onblur="validateInput(this)">
+      <div class="info">(Format MM/DD/YYYY)</div><br>
+      <input type="email" id="email" name="email" placeholder="Email" required onblur="validateInput(this)">
+      <div class="info">(exemple@example.com)</div><br>
+      <input type="password" id="password" name="password" placeholder="Parola" required minlength="5"
+        onblur="validateInput(this)">
+      <div class="info">(Minim 5 caractere)</div><br>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmare parola" required
+        minlength="5" onblur="validateInput(this)">
+      <div class="info" id="passwordStrength"></div><br>
+      <div class="info"></div><br>
+      <div id="passwordMatch" class="password-match"></div>
+      <input type="submit" value="Autentificare" id="submitButton" disabled>
+    </form>
+    <div id="capslockWarning" class="info" style="color: red; display: none;">ATENTIE: CAPSLOCK ESTE ACTIVAT</div>
+    <div class="info" style="text-align: center; margin-top: 10px;">Ai deja un cont? Click <a
+        href="log-in.html">aici</a> pentru autentificare</div>
+    <div class="back-to-main" onclick="goToMainPage()">Inapoi la pagina principala</div>
+  </div>
+</body>
+
+<script src="scripts/auth.js"></script>
+<script src="scripts/services.js"></script>
+
+</html>

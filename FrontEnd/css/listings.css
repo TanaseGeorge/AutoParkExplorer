@@ -1,0 +1,42 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-entry {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li .file-entry:hover {
+  background-color: #f1f1f1;
+}
+
+.context-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.context-menu ul {
+  padding: 0;
+}
+
+.context-menu li {
+  padding: 10px 20px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.context-menu li.file-entry:hover {
+  background-color: #f8f9fa;
+}
